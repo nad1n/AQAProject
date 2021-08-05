@@ -24,11 +24,8 @@ public class HomeWorkApp {
         System.out.println();
         System.out.println("Persons who 40+");
 
-
-
-
         for (int i=0; i<5; i++){
-            if (persArray[i].outOld() >= 40)
+            if (persArray[i].getAge() >= 40)
                 System.out.println(persArray[i].toString());
         }
 

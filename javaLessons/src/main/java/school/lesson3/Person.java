@@ -32,7 +32,7 @@ public class Person {
                 "; Phone: " + this.phone + "; Salary: " + this.salary + "; Age: " + this.age + "}") ;
     }
 
-    public int outOld (){
+    public int getAge (){
         return age;
     }
 
