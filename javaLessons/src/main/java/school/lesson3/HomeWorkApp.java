@@ -7,8 +7,6 @@ public class HomeWorkApp {
 
     public static void main(String[] args) {
 
-        System.out.println("All persons:");
-
         Person[] persArray = new Person[5];
         persArray[0] = new Person("Ivanov Ivan", "Engineer",
                 "ivivan@mailbox.com", "892312312", 30000, 30);
@@ -21,12 +19,18 @@ public class HomeWorkApp {
         persArray[4] = new Person("Levov Lev", "Boss",
                 "lelev@mailbox.com", "895314322", 40000, 40);
 
+        System.out.println("All persons:");
+
+        for (int i=0; i<5; i++){
+            persArray[i].info();
+        }
+
         System.out.println();
         System.out.println("Persons who 40+");
 
         for (int i=0; i<5; i++){
             if (persArray[i].getAge() >= 40)
-                System.out.println(persArray[i].toString());
+                persArray[i].info();
         }
 
     }

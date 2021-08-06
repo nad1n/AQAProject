@@ -16,8 +16,6 @@ public class Person {
         this.salary = salary;
         this.age = age;
 
-        System.out.println("{ Person: " + this.name + "; Job: " + this.job + "; Email: " + this.email +
-                "; Phone: " + this.phone + "; Salary: " + this.salary + "; Age: " + this.age + "}") ;
     }
 
     public Person(){
@@ -27,9 +25,31 @@ public class Person {
         this.phone = "empty";
         this.salary = 30000;
         this.age = 30;
+    }
 
-        System.out.println("{ Person: " + this.name + "; Job: " + this.job + "; Email: " + this.email +
-                "; Phone: " + this.phone + "; Salary: " + this.salary + "; Age: " + this.age + "}") ;
+    public void info(){
+        System.out.println("{ Person: " + getName() + "; Job: " + getJob() + "; Email: " + getEmail() +
+                "; Phone: " + getPhone() + "; Salary: " + getSalary() + "; Age: " + getAge() + "}");
+    }
+
+    public String getName (){
+        return name;
+    }
+
+    public String getJob (){
+        return job;
+    }
+
+    public String getEmail (){
+        return email;
+    }
+
+    public String getPhone (){
+        return phone;
+    }
+
+    public int getSalary (){
+        return salary;
     }
 
     public int getAge (){
@@ -37,8 +57,8 @@ public class Person {
     }
 
     public String toString(){
-        return("{ Person: " + name + "; Job: " + job + "; Email: " + email +
-                "; Phone: " + phone + "; Salary: " + salary + "; Age: " + age + "}");
+        return("{ Person: " + getName() + "; Job: " + getJob() + "; Email: " + getEmail() +
+                "; Phone: " + getPhone() + "; Salary: " + getSalary() + "; Age: " + getAge() + "}");
     }
 
 }
