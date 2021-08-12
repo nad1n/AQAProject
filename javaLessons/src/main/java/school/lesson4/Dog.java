@@ -5,26 +5,25 @@ public class Dog extends Animal {
     private static int dcount = 0;
 
     public Dog(String name, String color) {
-        this.name = name;
-        this.color = color;
+        super(name, color);
         dcount++;
     }
 
     public Dog(String name, String color, int appetite) {
-        this.name = name;
-        this.color = color;
-        this.appetite = appetite;
+        super(name, color, appetite);
         dcount++;
     }
 
-    private static int getDcount(){return dcount;}
+    private static int getDcount() {
+        return dcount;
+    }
 
     @Override
     public void info() {
         System.out.println("Dog name: " + getName() + "; color: " + getColor());
     }
 
-   @Override
+    @Override
     public void run(int dist) {
         if (dist < 0) System.out.println(getName() + " can't run inversely " + dist + "m");
         else {

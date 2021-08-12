@@ -79,13 +79,13 @@ public class HomeWorkApp {
         //Task 8
         System.out.println(" \n ========================\n Task 8 \n");
 
-        Rectangle rect1 = new Rectangle(5, 5, "green", "red");
+        Rectangle rect1 = new Rectangle("green", "red", 5, 5);
         System.out.println(rect1.info());
 
-        Round round = new Round(3, "red", "yellow");
+        Round round = new Round("red", "yellow", 3);
         System.out.println(round.info());
 
-        Triangle triangle = new Triangle(3,4,5, "brown", "white");
+        Triangle triangle = new Triangle("brown", "white", 2,2,5);
         System.out.println(triangle.info());
 
 

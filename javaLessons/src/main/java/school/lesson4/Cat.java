@@ -5,27 +5,23 @@ public class Cat extends Animal {
     private static int ccount = 0;
 
     public Cat(String name, String color) {
-        this.name = name;
-        this.color = color;
+        super(name, color);
         ccount++;
     }
 
     public Cat(String name, String color, int appetite) {
-        this.name = name;
-        this.color = color;
-        this.appetite = appetite;
+        super(name, color, appetite);
         ccount++;
     }
 
-    /*public Cat(String name, String color, int appetite, boolean satiety) {
-        this.name = name;
-        this.color = color;
-        this.appetite = appetite;
-        this.satiety = false;
+    public Cat(String name, String color, int appetite, boolean satiety) {
+        super(name, color, appetite, satiety);
         ccount++;
-    }*/
+    }
 
-    private static int getCcount(){return ccount;}
+    private static int getCcount() {
+        return ccount;
+    }
 
     @Override
     public void info() {
@@ -53,8 +49,6 @@ public class Cat extends Animal {
         System.out.println();
         System.out.println("You created " + getCcount() + " cats");
     }
-
-
 
 
 }

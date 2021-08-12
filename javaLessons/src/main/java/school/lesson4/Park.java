@@ -38,7 +38,7 @@ public class Park {
         this.namePark = namePark;
     }
 
-    class Atraction{
+    class Atraction {
         private String atrName;
         private String atrType;
         private int atrPrice;
