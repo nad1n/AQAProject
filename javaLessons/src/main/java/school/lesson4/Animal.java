@@ -30,14 +30,14 @@ public class Animal {
         count++;
     }
 
-    /*
+
     public Animal(String name, String color, int appetite, boolean satiety) {
         this.name = name;
         this.color = color;
         this.appetite = appetite;
-        this.satiety = satiety;
+        this.satiety = false;
         count++;
-    }*/
+    }
 
     protected String getName() {
         return name;
@@ -51,9 +51,9 @@ public class Animal {
         return appetite;
     }
 
-    /*public static boolean getSatiety() {
+    public static boolean getSatiety() {
         return satiety;
-    }*/
+    }
 
     private static int getCount() {
         return count;
@@ -82,22 +82,22 @@ public class Animal {
 
 
 
-    /*void setSatiety(boolean satiety) {
+    void setSatiety(boolean satiety) {
         this.satiety = satiety;
-    }*/
+    }
 
     public void eat(Plate p) {
         int c = p.decreaseFood(getAppetite());
         if (c == 0) {
             System.out.println(getName() + " has eaten, leaving nothing of food");
-            //setSatiety(true);
+            setSatiety(true);
         } else {
             if (c > 0) {
                 System.out.println(getName() + " has eaten, leaving " + c + " of food");
-                //setSatiety(true);
+                setSatiety(true);
             } else {
                 System.out.println("Warning! " + getName() + " is hungry, add food!");
-                //setSatiety(false);
+                setSatiety(false);
             }
         }
     }

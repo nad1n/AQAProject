@@ -6,50 +6,64 @@ package school.lesson4;
 // и стоимости.
 
 
+import java.util.ArrayList;
+import java.util.List;
 
 public class Park {
-
     private String namePark;
+    private List<Atraction> atractionList;
 
     public Park(String namePark) {
         this.namePark = namePark;
+        atractionList = new ArrayList<Atraction>();
     }
 
-    public String getNamePark(){
-     return namePark;
+    public List<Atraction> getAtractionList() {
+        return atractionList;
     }
 
-    public class Attraction {
-        protected String attrName;
-        protected String attrType;
-        protected int attrPrice;
-
-        public Attraction(String attrName, String attrType, int attrPrice) {
-            this.attrName = attrName;
-            this.attrType = attrType;
-            this.attrPrice = attrPrice;
-        }
-
-        public String getAttrName() {
-            return attrName;
-        }
-        public String getAttrType() {
-            return attrType;
-        }
-        public int getAttrPrice() {
-            return attrPrice;
-        }
-
-        public void attrInfo() {
-            System.out.println("In " + getNamePark() + " is Attraction: "
-                    + getAttrName() + ", Type: " + getAttrType() + ", Price: " + getAttrPrice());
-        }
+    void addAtraction(Atraction atraction) {
+        atractionList.add(atraction);
     }
 
+    public String parkInfo() {
+        return "In " + getNamePark() + "\n" + getAtractionList().toString();
+    }
+
+    public String getNamePark() {
+        return namePark;
+    }
+
+    public void setNamePark(String namePark) {
+        this.namePark = namePark;
+    }
+
+    class Atraction{
+        private String atrName;
+        private String atrType;
+        private int atrPrice;
+
+        public Atraction(String atrName, String atrType, int atrPrice) {
+            this.atrName = atrName;
+            this.atrType = atrType;
+            this.atrPrice = atrPrice;
+        }
+
+        public String getArtName() {
+            return atrName;
+        }
+
+        public String getAtrType() {
+            return atrType;
+        }
+
+        public int getAtrPrice() {
+            return atrPrice;
+        }
 
 
-
-
-
-
+        public String toString() {
+            return " \n Name: " + getArtName() + "; Type: " + getAtrType() + "; Price: " + getAtrPrice();
+        }
+    }
 }

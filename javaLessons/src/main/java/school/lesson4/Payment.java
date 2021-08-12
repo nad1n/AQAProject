@@ -7,18 +7,17 @@ public class Payment {
 
     private int id; //id payment
     private Product[] prodArray; //list of products
-    private int cost; //cost of payment
-    private int sumCost;
+    private double sumCost;
 
     public Payment() {
         this.id = 1;
-        this.cost = 0;
+        this.sumCost = 0;
     }
 
     private class Product {
 
         private String productName;
-        private int productCost;
+        private double productCost;
 
         public Product() {
             super();
@@ -26,7 +25,7 @@ public class Payment {
             productCost = 0;
         }
 
-        public Product(String productName, int productCost) {
+        public Product(String productName, double productCost) {
             super();
             this.productName = productName;
             this.productCost = productCost;
@@ -36,7 +35,7 @@ public class Payment {
             return this.productName;
         }
 
-        public int getProductCost() {
+        public double getProductCost() {
             return this.productCost;
         }
 
@@ -44,7 +43,7 @@ public class Payment {
 
 
     public void setPayment() {
-        this.cost = 0;
+        this.sumCost = 0;
         System.out.print("Введите количество товаров, которое Вы хотите приобрести: ");
 
         Scanner sc = new Scanner(System.in);
@@ -60,11 +59,11 @@ public class Payment {
                     System.out.print("Наименование: ");
                     String str_name = sc.next();
                     System.out.print("Цена: ");
-                    int prod_cost = sc.nextInt();
+                    double prod_cost = sc.nextInt();
                     sumCost += prod_cost;
 
                     prodArray[i] = new Product(str_name, prod_cost);
-                    this.cost = this.cost + prodArray[i].productCost;
+                    this.sumCost = this.sumCost + prodArray[i].productCost;
                 }
             } else {
                 System.out.println("Вы не хотите делать покупки!");
@@ -76,7 +75,7 @@ public class Payment {
     }
 
     public void setPayment(int count) {
-        this.cost = 0;
+        this.sumCost = 0;
         Scanner sc = new Scanner(System.in);
 
         if (count == 0) {
@@ -89,11 +88,11 @@ public class Payment {
                     System.out.print("Наименование: ");
                     String str_name = sc.next();
                     System.out.print("Цена: ");
-                    int prod_cost = sc.nextInt();
+                    double prod_cost = sc.nextInt();
                     sumCost += prod_cost;
 
                     prodArray[i] = new Product(str_name, prod_cost);
-                    this.cost = this.cost + prodArray[i].productCost;
+                    this.sumCost = this.sumCost + prodArray[i].productCost;
                 }
             } else {
                 System.out.println("Вы не хотите делать покупки!");

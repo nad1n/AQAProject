@@ -48,21 +48,46 @@ public class HomeWorkApp {
         catChik.info();
         catNyam.info();
 
+
+
+
         //Task 6
+        System.out.println(" \n ========================\n Task 6 \n");
+
         Payment payment = new Payment();
-        payment.setPayment(3);
+        payment.setPayment(1);
         payment.printCheque();
 
 
         //Task 7
-        Park.Attraction wheel = new Park("Gorky Park").new Attraction("Ferris Wheel", "General", 50);
-        Park.Attraction roller = new Park("Gorky Park").new Attraction("Roller Coaster", "Extreme", 50);
+        System.out.println(" \n ========================\n Task 7 \n");
 
-        wheel.attrInfo();
+
+        Park parkGorkiy = new Park("Gorky Park");
+        parkGorkiy.addAtraction(parkGorkiy.new Atraction("Ferris Wheel", "General", 40));
+        parkGorkiy.addAtraction(parkGorkiy.new Atraction("Roller Coaster", "Extreme", 50));
+
+        Park molodist = new Park("Molodist");
+        molodist.addAtraction(molodist.new Atraction("Swing", "Kids", 0));
+        molodist.addAtraction(molodist.new Atraction("SeeSaw", "Kids", 0));
+        molodist.addAtraction(molodist.new Atraction("Tramp", "Kids", 30));
+
+        System.out.println(parkGorkiy.parkInfo());
+        System.out.println(molodist.parkInfo());
+
 
         //Task 8
+        System.out.println(" \n ========================\n Task 8 \n");
 
-        //не успеваю!!! доделаю в среду в течении дня
+        Rectangle rect1 = new Rectangle(5, 5, "green", "red");
+        System.out.println(rect1.info());
+
+        Round round = new Round(3, "red", "yellow");
+        System.out.println(round.info());
+
+        Triangle triangle = new Triangle(3,4,5, "brown", "white");
+        System.out.println(triangle.info());
+
 
     }
 
