@@ -41,7 +41,7 @@ class Box<T extends Fruit> {
         if (list.isEmpty()) {
             System.out.println("Box is empty");
         } else {
-            System.out.println("In Box there are " + list.size() + " of " + list.get(0).toString());
+            System.out.println("In Box there are " + list.size() + " of " + list.get(0).getClass().getSimpleName());
         }
     }
 
