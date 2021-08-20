@@ -36,7 +36,8 @@ public class AppData {
                     }
                 }
             }
-
+            in.flush();
+            in.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
