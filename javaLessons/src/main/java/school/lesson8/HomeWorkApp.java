@@ -44,7 +44,7 @@ public class HomeWorkApp {
         phoneList.getPhone("Paul");
     }
 
-    public static void acountWords(String[] array){
+    public static void acountWords(String[] array) {
         LinkedHashMap<String, Integer> acountWords = new LinkedHashMap<>();
         for (String word : array) {
             Integer value = acountWords.get(word);
@@ -58,7 +58,7 @@ public class HomeWorkApp {
         System.out.println();
     }
 
-    public static void printUnique(String[] array){
+    public static void printUnique(String[] array) {
         Set<String> uniqList = new LinkedHashSet<>();
         uniqList.addAll(Arrays.asList(array));
         System.out.println(uniqList);
