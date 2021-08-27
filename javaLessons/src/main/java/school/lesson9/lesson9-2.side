@@ -1,0 +1,273 @@
+{
+  "id": "ab5c9397-b96e-4d60-a6b6-f5bff986433b",
+  "version": "2.0",
+  "name": "lesson9-2",
+  "url": "https://www.tumblr.com",
+  "tests": [{
+    "id": "701924a6-e5b7-4ffb-958c-d859c4ae2085",
+    "name": "Create_post",
+    "commands": [{
+      "id": "158b2609-8fc4-4568-a853-eada173998cd",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e34f9e9d-b20b-4c53-8c7a-b95d51170358",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1248x883",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "96ad5ba3-02b3-4b3e-8ce0-474c92ec98b7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.i_kY6:nth-child(1)",
+      "targets": [
+        ["css=.i_kY6:nth-child(1)", "css:finder"],
+        ["xpath=(//a[contains(text(),'Войти')])[3]", "xpath:link"],
+        ["xpath=//div[@id='base-container']/div[2]/div[2]/header/div[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/login')])[3]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "22d67e24-024e-4622-b19a-767dc08e9483",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.YBsUO:nth-child(1) > .o4KIk", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//section[@id='Вперед!']/div/div/div[2]/div/section/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "petrenko.nad1n@gmail.com"
+    }, {
+      "id": "0f0a4227-5d7b-450a-ae29-cade755cd5f3",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.YBsUO:nth-child(2) > .o4KIk", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//section[@id='Вперед!']/div/div/div[2]/div/section/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "K31a33ru"
+    }, {
+      "id": "e20a5221-91b1-4807-ae55-2b590c830779",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ZYq7T > .vq1BT",
+      "targets": [
+        ["css=.ZYq7T > .vq1BT", "css:finder"],
+        ["xpath=//section[@id='Вперед!']/div/div/div[2]/div/section/div/form/button/span", "xpath:idRelative"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'Войти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5b74a1a2-e9fa-4fd3-9161-44c05f3406b5",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.kIuBF:nth-child(6) svg",
+      "targets": [
+        ["css=.kIuBF:nth-child(6) svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "039ac124-8f18-464a-9f63-5d9c3b281454",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.kIuBF:nth-child(6) svg",
+      "targets": [
+        ["css=.kIuBF:nth-child(6) svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "adbf4b38-2def-4730-92c9-0db4ca48e8ee",
+      "comment": "",
+      "command": "click",
+      "target": "css=.BPAd0 > svg",
+      "targets": [
+        ["css=.BPAd0 > svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "8432190f-37b1-40da-ac2a-b474b1385c10",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ZkWu_",
+      "targets": [
+        ["css=.ZkWu_", "css:finder"],
+        ["xpath=//div[@id='glass-container']/div/div/div/div/a/div", "xpath:idRelative"],
+        ["xpath=//body/div/div/div[4]/div/div/div/div/a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "39ff1c09-248b-494e-bdc1-a5ac0eff5238",
+      "comment": "",
+      "command": "editContent",
+      "target": "css=.editor-plaintext",
+      "targets": [
+        ["css=.editor-richtext", "css:finder"],
+        ["xpath=//body[@id='redpop_iframePostForms']/div[3]/div/div/div/div/div[2]/div[2]/div/div[2]/div/div[3]/div/div/div", "xpath:idRelative"],
+        ["xpath=//div/div[3]/div/div/div", "xpath:position"]
+      ],
+      "value": "<span>Название поста</span>"
+    }, {
+      "id": "ae707fc7-fe5a-40f8-91de-3fb8d1a07f43",
+      "comment": "",
+      "command": "editContent",
+      "target": "css=.editor-richtext",
+      "targets": [
+        ["css=.editor-richtext", "css:finder"],
+        ["xpath=//body[@id='redpop_iframePostForms']/div[3]/div/div/div/div/div[2]/div[2]/div/div[2]/div/div[3]/div/div/div", "xpath:idRelative"],
+        ["xpath=//div/div[3]/div/div/div", "xpath:position"]
+      ],
+      "value": "<p>новый пост\\n</p>"
+    }, {
+      "id": "43ad0126-cf61-4ce3-8f70-7c178a962599",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button-area",
+      "targets": [
+        ["css=.button-area", "css:finder"],
+        ["xpath=//body[@id='redpop_iframePostForms']/div[3]/div/div/div/div/div[2]/div[2]/div/div[5]/div/div/div[3]/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Опубликовать')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f8600c66-d595-408b-9a2d-51e3fb4e3f1c",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "9fec18be-1631-435d-8afa-5283e8c8cefd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.kIuBF:nth-child(6) svg",
+      "targets": [
+        ["css=.kIuBF:nth-child(6) svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "56210086-62a5-4cd2-b033-62c59c30996e",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.kIuBF:nth-child(6) svg",
+      "targets": [
+        ["css=.kIuBF:nth-child(6) svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "1493434d-8435-4975-88bd-04f0af1c4b81",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.kIuBF:nth-child(6) svg",
+      "targets": [
+        ["css=.kIuBF:nth-child(6) svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "129fefe0-dc56-4918-90c0-fda2d87426f3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.VsedS > li:nth-child(1) > a",
+      "targets": [
+        ["css=.VsedS > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//div[@id='base-container']/div[2]/div/header/div[2]/div[6]/span/div/div/div/ul[2]/div/li/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/blog/lazytalecupcake')])[2]", "xpath:href"],
+        ["xpath=//li/div/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dfb569da-de83-461c-884c-9054d58afd9f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.VsedS > li:nth-child(1) > a",
+      "targets": [
+        ["css=.VsedS > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//div[@id='base-container']/div[2]/div/header/div[2]/div[6]/span/div/div/div/ul[2]/div/li/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/blog/lazytalecupcake')])[2]", "xpath:href"],
+        ["xpath=//li/div/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b47d2208-1a64-47ff-9247-71703cf26980",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.shgTR:nth-child(1) > p",
+      "targets": [
+        ["css=.shgTR:nth-child(1) > p", "css:finder"],
+        ["xpath=//div[@id='base-container']/div[2]/div[2]/div/main/div[2]/div[2]/div/div/div/article/div[2]/div/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'ntrcnngfjkjgfjkdhgfj')]", "xpath:innerText"]
+      ],
+      "value": "новый пост"
+    }, {
+      "id": "aabcc26e-2249-4aaf-9afa-fe841ae2778f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.oXYe5:nth-child(1)",
+      "targets": [
+        ["css=.oXYe5:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='base-container']/div[2]/div/header/div[2]/div[6]/span/div/div/div/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div/button/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "771ebbae-e31b-4450-b1c2-a64a918492e2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ZYq7T:nth-child(2) > .vq1BT",
+      "targets": [
+        ["css=.ZYq7T:nth-child(2) > .vq1BT", "css:finder"],
+        ["xpath=//div[@id='glass-container']/div/div[2]/div[2]/button[2]/span", "xpath:idRelative"],
+        ["xpath=//div[2]/button[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'OК')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d385e7b6-9cbe-468d-bf38-3fdf21b1b425",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.i_kY6:nth-child(2)",
+      "targets": [
+        ["css=.i_kY6:nth-child(2)", "css:finder"],
+        ["xpath=(//a[contains(text(),'Зарегистрироваться')])[3]", "xpath:link"],
+        ["xpath=//div[@id='base-container']/div[2]/div[2]/header/div[2]/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/register?source=login_register_header')]", "xpath:href"],
+        ["xpath=//div[2]/a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7b890a32-87e9-4cf8-825f-9d1c934b2cf9",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "752764e9-8637-4d84-a130-0360c5cb32ad",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["701924a6-e5b7-4ffb-958c-d859c4ae2085"]
+  }],
+  "urls": ["https://www.tumblr.com/"],
+  "plugins": []
+}
